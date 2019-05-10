@@ -1,0 +1,8 @@
+<%= @task.details %>
+<% if @task.completed %>
+  <p> ✔️ </p>
+<% end %>
+
+<%= link_to "Update", edit_task_path(@task) %>
+
+<%= link_to "Delete", delete_task_path(@task), method: :delete %>
